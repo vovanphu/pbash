@@ -7,11 +7,10 @@ function pbash () {
     fi
 
     functionName="pbash-${methodName}";
-    if [[ "$(type -t $functionName)" -ne "function" ]]; then
-        return 1;
+    if typeset -f $functionName > /dev/null ; then
+        shift;
+        $functionName $@;
     fi
 
-    shift;
-    
-    $functionName $@;
+    return 1;
 }
