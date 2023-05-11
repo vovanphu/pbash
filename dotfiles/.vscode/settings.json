@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.wordWrapColumn": 80,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.formatDocument",
+    "source.fixAll.eslint",
+  ],
+}

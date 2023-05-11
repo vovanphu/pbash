@@ -10,7 +10,7 @@ function pbash () {
     if typeset -f $functionName > /dev/null ; then
         shift;
         $functionName $@;
+        return 0;
     fi
-
     return 1;
 }

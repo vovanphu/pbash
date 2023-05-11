@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 function pbash-restart () {
-    sudo systemctl restart apache2 mysql php7.2-fpm;
+    sudo service apache2 restart
+    sudo service php7.2-fpm restart
+    sudo service mysql restart
 }
